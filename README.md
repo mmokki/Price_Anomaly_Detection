@@ -1,10 +1,29 @@
 # Price Anomaly Detection
-The project used the two features (Standard Deviation and Kurtosis) extracted from price points distribution of each product in each store to detect the products with price anomalies in its sales history.
+This is a personal project.
 
-Since the price rarely changes in retail industry, the assumption is the products having price points distribution with high Kurtosis and high standard deviation simutaneously are more likely have anomalies in its sales history.
+### Goal
+The goal of this project is to detect price anomalies at product level, that is to identify products containing price anomalies in its sales history.
 
-Two approaches has been applied:
-- Using quantile as threshold
-- Clustering: Kmeans, Meanshift and DBSCAN
 
-It turns out DBSCAN is the best methods to apply in this case.
+### Analysis Process
+This project explored several classification methods using features extracted from price distribution of each product in each store to flag abnormal products.
+
+Feature Engineering:
+- Standard Deviation
+- Kurtosis
+
+In the retail industry, having consistent pricing most of the time and having a few different infrequent price points can hint at the distribution being anomalous. 
+
+Kurtosis measures the sharpness and STD measures the spread of the price distribution. Thus, products having price distribution with high Kurtosis and high standard deviation simutaneously are more likely to have anomalies in its sales history. Because high kurtosis indicates there is a frequently used normal price, and high STD indicates there are few infrequent prices lies far away in the tails of the distribution which are highly possible to be price anomalies.
+
+After extracted the two features, four classification methods were conducted:
+- Using quantile as threshold independently
+- Kmeans clustering
+- Meanshift clustering
+- DBSCAN clustering
+
+
+### Result
+According to the result plots, DBSCAN turns out to be the best method in this case. 
+
+I further validated the method using flagged sales dataset to get evaluation metrics like accuracy and precision. However, the validation part can not be publicly shared due to confidential reasons.
