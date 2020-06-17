@@ -5,7 +5,7 @@ This is a personal project.
 The goal of this project is to detect price anomalies at product level, that is to identify products containing price anomalies in its sales history.
 
 
-### Analysis Process
+### Analysis
 This project explored several classification methods using features extracted from price distribution of each product in each store to flag abnormal products.
 
 Feature Engineering:
