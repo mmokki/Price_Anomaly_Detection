@@ -17,7 +17,7 @@ In the retail industry, having consistent pricing most of the time and having a 
 Kurtosis measures the sharpness and STD measures the spread of the price distribution. Thus, products having price distribution with high Kurtosis and high standard deviation simutaneously are more likely to have anomalies in its sales history. Because high kurtosis indicates there is a frequently used normal price, and high STD indicates there are few infrequent prices lies far away in the tails of the distribution which are highly possible to be price anomalies.
 
 After extracting the two features, four classification methods were utilized:
-- Using quantile as threshold independently
+- Using quantile as threshold for the two features independently
 - Kmeans clustering
 - Meanshift clustering
 - DBSCAN clustering
