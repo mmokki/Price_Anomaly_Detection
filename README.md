@@ -10,7 +10,7 @@ This project explored several classification methods using features extracted fr
 
 Feature Engineering:
 - Standard Deviation
-- Kurtosis
+- [Kurtosis](https://en.wikipedia.org/wiki/Kurtosis)
 
 In the retail industry, having consistent pricing most of the time and having a few different infrequent price points can hint at the distribution being anomalous. 
 
@@ -27,3 +27,7 @@ After extracting the two features, four classification methods were utilized:
 According to the result plots, DBSCAN turns out to be the best method in this case. 
 
 I further validated the method using flagged sales dataset to get evaluation metrics like accuracy and precision. However, the validation part can not be publicly shared due to confidential reasons.
+
+
+#### Referrance
+[The 5 Clustering Algorithms Data Scientists Need to Know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
